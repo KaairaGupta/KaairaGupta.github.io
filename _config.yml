@@ -1,5 +1,5 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.kaairagupta.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kaairagupta.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username:
 github_username: KaairaGupta
 
@@ -34,3 +34,14 @@ tag_permalink_style:  pretty
 sass:
   sass_dir: _sass
   style: compressed
+
+  # Atom feed
+plugins:
+  - jekyll-feed
+
+url: https://kaairagupta.github.io
+author: Kaaira
+
+feed:
+  categories:
+    - Outreachy-Linux
