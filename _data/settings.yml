@@ -8,7 +8,7 @@ description: Kaaira Gupta's blog
 # Author Settings
 author:
   name: Kaaira Gupta
-  #image:
+  image: icon.jpg
   say-hello: Hello, I’m <strong>Kaaira</strong>
   bio: Code. Read. Sleep. Repeat. I code in <strong>C++</strong>, <strong>Python</strong>, and <strong>Java</strong>. I develop <strong>Android applications</strong>, work on <strong>Linux Kernel</strong>, and I build <strong>Deep Learning Models</strong>. I am also an avid reader and can talk at length about the mysterious deaths of writers.
 
