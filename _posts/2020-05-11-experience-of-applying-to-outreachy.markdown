@@ -5,6 +5,7 @@ date: 2020-05-11 22:00:00 +0530
 image: outreachy1.jpeg
 tags: [Outreachy, libcamera]
 categories: [Outreachy-Linux]
+description: How I applied to Outreachy
 ---
 My institute has a rich culture of open-source. Most of us try for GSoC and Outreachy each summer. And more than 40 students succeed almost every year. You can see the hashtags of the like of *'AndhaPaisa'* (mad money), *'AndhaMachaya'*, and *'God'* floating everywhere on social media towards the April-end. So this legacy of striving for various __'Summer of Code (SoC)'__ programs was passed down to me by my beloved and always-helping seniors. 
 

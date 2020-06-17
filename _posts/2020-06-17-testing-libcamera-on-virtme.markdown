@@ -5,6 +5,7 @@ date: 2020-06-17 16:30:00 +0530
 image: libcamera1.png
 tags: [libcamera]
 categories: [Outreachy-Linux]
+description: Steps to setup virtme for libcamera development
 ---
 ### What this blog is about
 
