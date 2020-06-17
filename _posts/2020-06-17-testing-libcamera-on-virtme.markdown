@@ -5,7 +5,7 @@ date: 2020-06-17 16:30:00 +0530
 image: libcamera1.png
 tags: [libcamera]
 categories: [Outreachy-Linux]
-description: Steps to setup virtme for libcamera development
+description: This write-up highlights how one can use Virtme, which is a QEMU wrapper used to run a virtualized Linux kernel, to test the changes made in libcamera on the latest kernel. Virtme is 
 ---
 ### What this blog is about
 
