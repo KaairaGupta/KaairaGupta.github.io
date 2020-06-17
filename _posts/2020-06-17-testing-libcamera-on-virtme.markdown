@@ -5,13 +5,13 @@ date: 2020-06-17 16:30:00 +0530
 image: libcamera1.png
 tags: [libcamera]
 categories: [Outreachy-Linux]
-description: This write-up highlights how one can use Virtme, which is a QEMU wrapper used to run a virtualized Linux kernel, to test the changes made in libcamera on the latest kernel. Virtme is 
+description: This write-up highlights how one can use Virtme, which is a QEMU wrapper used to run a virtualized Linux kernel, to test the changes made in libcamera on the latest kernel. Virtme is..
 ---
 ### What this blog is about
 
 This write-up highlights how one can use [Virtme](https://github.com/amluto/virtme), which is a QEMU wrapper used to run a virtualized Linux kernel, to test the changes made in [libcamera](https://libcamera.org/index.html) on the latest kernel.
 
-Virtme is good in the sense that it is easy to use, and makes testing kernel changes quite simple, without rebooting the entire system again and again. I will walk through how we can use qcam, which is a testing application of libcamera, inside virtme.
+Virtme is good in the sense that it is easy to use, and makes testing kernel changes quite simple, without having to reboot the entire system again and again. I will walk through how we can use qcam, which is a testing application of libcamera, inside virtme.
 
 ### The steps
 
