@@ -1,0 +1,24 @@
+---
+layout: post
+title: Report 1
+date: 2020-06-25 12:20:00 +0530
+image: libcamera1.png
+tags: [Outreachy, libcamera]
+categories: [Outreachy-Linux]
+---
+
+Time flies by quick. I am already in my 6th week of the internship, and I feel like it just started yesterday. In this blog post, I will talk about my project and what I have done so far.
+
+### A Glimpse of Project
+
+I am working with [libcamera](https://libcamera.org/index.html), which is an open-source camera stack and framework for Linux, Android, and ChromeOS. My project revolves around working on both the kernel side, [VIMC driver](https://www.kernel.org/doc/html/v5.6/media/v4l-drivers/vimc.html), and the libcamera. The ultimate goal of the internship is to make VIMC support multistreaming, as well as to give multistreaming support to libcamera's VIMC pipeline handler.
+
+### The Report
+
+For the past five weeks, I have been trying to understand VIMC through several small issues, such as adding support for formats with an alpha component in them, writing text over tpg generated test-image, adding control for the same, etc.
+
+
+I have also worked on libcamera issues. I have changed libcamera::V4L2PixelFormat::toString() to return a FourCC instead of hex digits, libcamera::V4L2SubdeviceFormat::toString() to return a MBUS name instead of its predefined values, and libcamera::PixelFormat::toString() to return libcamera::formats defined names for the DRM formats instead of their hexadecimal digits. libcamera::PixelFormat::toString() prints libcamera defined names instead of the FourCCs and modifiers of the DRMs because using drm_fourcc.h in libcamera created a dependency on this header that is packaged differently between distributions, so instead of using drm_fourcc.h, libcamera had to define constants for the libcamera supported pixel formats in a new file, formats.h. While trying to print the FourCCs and modifiers for the DRMs we also realised that though DRM fourccs look like they have a per-plane modifier, they are, in fact, all the same. Hence I also changed the passing of a set to define a PixelFormat, to a single value. It took me a lot of time to set up environment for developing libcamera on the latest media-master, since I don't have a spare hardware for the same. So, currently I am using Virtme and I have mentioned the steps to set it up in previous blog post. 
+
+
+During this time, I also learnt about configfs, which is a filesystem-based manager of kernel objects. Configfs is meant to be mounted on /config, and like sysfs, it uses directories as the way of representing objects.  I understoofd this so as to understand how VIMC can use configfs instead of hardcoded configuration through this patchset by Dafna (https://gitlab.collabora.com/dafna/linux/-/commit/e424a9ee0dee5b36dad34c15ff21290314bcbbde). In the coming weeks, I will work on bringing multistream support in VIMC.
