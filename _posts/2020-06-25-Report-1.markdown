@@ -2,7 +2,7 @@
 layout: post
 title: Report 1
 date: 2020-06-25 12:20:00 +0530
-image: libcamera1.png
+image: report1.png
 tags: [Outreachy, libcamera]
 categories: [Outreachy-Linux]
 ---
