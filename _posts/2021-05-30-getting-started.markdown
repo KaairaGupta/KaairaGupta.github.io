@@ -8,15 +8,15 @@ categories: [GSoC2021]
 ---
 Hello readers!
 
-I am an engineering Junior at Indian Institute of Technology, Roorkee. I have been recently selected as a student developer through Google Summer of Code '21, with [TianoCore](https://www.tianocore.org/). I will be working on the project of [Developing Board Port following Minimum Platform specifications for Qemu](https://summerofcode.withgoogle.com/projects/#6418204223602688). I am thankful to TianoCore for accepting my proposal and Nate DeSimone who helped me enormously in preparing it. I am looking forward to working with my mentors Michael Kubacki and Ray Ni. Through this blog series I would share my progress throughout the GSoC period. I would try to write weekly, but most definitely will write a fortnightly update.
+I am an engineering Junior at the Indian Institute of Technology, Roorkee. I have been recently selected as a student developer through Google Summer of Code '21, with [TianoCore](https://www.tianocore.org/). I will be working on [Developing Board Port following Minimum Platform specifications for Qemu](https://summerofcode.withgoogle.com/projects/#6418204223602688). I am thankful to TianoCore for accepting my proposal and Nate DeSimone, who helped me enormously prepare it. I am looking forward to working with my mentors Michael Kubacki and Ray Ni. Through this blog series, I would share my progress throughout the GSoC period. I would try to write weekly but most definitely will write a fortnightly update.
 
 [Here](https://github.com/tianocore/tianocore.github.io/wiki/Tasks-MinPlatform-QemuOpenBoardPkg) is a brief introduction of my project.
 
-Coding period begins on 7th June. Till then, we have community bonding period, which essentially means *bonding* with the community, engaging on the list, and redefining the timeline. I had my first meeting with Michael on 21st May on Teams, which was an introduction meeting where he explained the goals and neccessities of the project to me.
+The coding period begins on 7th June. Till then, we have community bonding period, which essentially means *bonding* with the community, engaging on the list, and redefining the timeline. I had my first meeting with Michael on 21st May on Teams, which was an introductory meeting where he explained the goals and necessities of the project to me.
 
 ### Setting up the environment
 
-I built OVMF and ran it with QEMU, through which I could boot to the EFI shell. I also booted Ubuntu on it further to get the debug log of the firmware boot leading up to the OS. This log would be a useful reference later to compare to when I enable OS boot in the new board package for Qemu.
+I built OVMF and ran it with QEMU, through which I could boot to the EFI shell. I also booted Ubuntu on it further to get the debug log of the firmware boot leading up to the OS. This log would be a useful reference later to compare to when I enable OS to boot in the new board package for Qemu.
 
 
 - Install QEMU, if not present already:  
@@ -44,4 +44,4 @@ Booting the OS:
 
 ### Up next
 
-I have taken a brief overview of UEFI and EDK2 concepts from [the training materail](https://github.com/tianocore-training/Tianocore_Training_Contents/wiki). I have also identified the various technologies in OvmfPkg like Bhyve and CSM, to get a high-level overview of the support OvmfPkg provided today. My next blog would be around these details together with other things I learn during the week!
+I have briefly overviewed UEFI and EDK2 concepts from [the training material](https://github.com/tianocore-training/Tianocore_Training_Contents/wiki). I have also identified the various technologies in OvmfPkg like Bhyve and CSM, to get a high-level overview of the support OvmfPkg provided today. My next blog would be around these details together with other things I learn during the week!
