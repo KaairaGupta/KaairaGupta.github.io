@@ -36,10 +36,10 @@ I built OVMF and ran it with QEMU, through which I could boot to the EFI shell. 
 - [Here](https://gist.github.com/KaairaGupta/ed352049fa156882b4f329905f0a54e1) is the debug log. 
 
 Only booting to the EFI shell:
-![EFI shell](https://github.com/KaairaGupta/KaairaGupta.github.io/blob/master/images/gsoc1_1.png)
+![EFI shell](/images/gsoc1_1.png)
 
 Booting the OS:
-![Ubuntu Boot](https://github.com/KaairaGupta/KaairaGupta.github.io/blob/master/images/gsoc1_2.png)
+![Ubuntu Boot](/images/gsoc1_2.png)
 
 
 ### Up next
